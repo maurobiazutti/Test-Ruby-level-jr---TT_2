@@ -15,7 +15,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_28_212350) do
     t.string "description"
     t.integer "user_id", null: false
     t.integer "event_id", null: false
-    t.integer "award_id", null: true
+    t.integer "award_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["award_id"], name: "index_user_event_awards_on_award_id"

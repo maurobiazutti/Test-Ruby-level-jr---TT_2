@@ -4,7 +4,7 @@ class CreateUserEventAwards < ActiveRecord::Migration[7.0]
       t.string :description
       t.references :user, null: false, foreign_key: true
       t.references :event, null: false, foreign_key: true
-      t.references :award, null: true, foreign_key: true
+      t.references :award, null: false, foreign_key: true
 
       t.timestamps
     end

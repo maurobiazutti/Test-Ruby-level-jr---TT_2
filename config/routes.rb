@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :user_awards
   resources :user_events
   resources :awards
   resources :events

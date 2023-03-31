@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @user_award %>
+
+<div>
+  <%= link_to "Edit this user award", edit_user_award_path(@user_award) %> |
+  <%= link_to "Back to user awards", user_awards_path %>
+
+  <%= button_to "Destroy this user award", @user_award, method: :delete %>
+</div>

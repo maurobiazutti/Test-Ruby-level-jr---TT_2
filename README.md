@@ -12,10 +12,10 @@ Desafios / Solução
 **1** - Escreva um método que dado um inteiro x, um inteiro y e um inteiro w retorne todos os
 números divisíveis por w entre x e y.
 
-**2** - Em um sistema web, cada usuário pode se inscrever em diversos eventos, cada evento
+**2** - ~~Em um sistema web, cada usuário pode se inscrever em diversos eventos, cada evento
 possui até 3 prêmios que são distribuídos entre os usuários presentes. O sistema precisa
 guardar a informação sobre quem participou de cada evento e quem ganhou os prêmios.
-Modele um banco de dados capaz de suportar essas regras.
+Modele um banco de dados capaz de suportar essas regras.~~
 
 **3** - Considere um sistema onde cada Usuário possui os atributos nome (String), idade
 (Inteiro) e profissão (String). Faça uma query que retorne o nome de todos os usuários com

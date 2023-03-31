@@ -1207,3 +1207,1351 @@ Processing by UserEventAwardsController#create as TURBO_STREAM
 Completed 422 Unprocessable Entity in 11ms (Views: 6.5ms | ActiveRecord: 0.4ms | Allocations: 10130)
 
 
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:03:00 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.6ms | Allocations: 256)
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 25.5ms | Allocations: 17612)
+  Rendered layout layouts/application.html.erb (Duration: 154.3ms | Allocations: 58005)
+Completed 200 OK in 179ms (Views: 157.8ms | ActiveRecord: 1.7ms | Allocations: 69288)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:05:03 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 30.2ms | Allocations: 12277)
+  Rendered users/index.html.erb within layouts/application (Duration: 33.6ms | Allocations: 13590)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 13668)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.2ms | Allocations: 15028)
+
+
+  
+ActionView::Template::Error (Rails couldn't find a valid model for Usereventaward association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+     6: 
+     7:   <p>
+     8:     <strong>Name:</strong>
+     9:     <%= user.events.description %>
+    10:   </p>
+    11: 
+    12: </div>
+  
+app/views/users/_user.html.erb:9
+app/views/users/index.html.erb:7
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:05:08 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 7.9ms | Allocations: 3640)
+  Rendered users/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 4912)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 4990)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.3ms | Allocations: 6141)
+
+
+  
+ActionView::Template::Error (undefined method `event' for #<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">
+Did you mean?  events
+               events=):
+     6: 
+     7:   <p>
+     8:     <strong>Name:</strong>
+     9:     <%= user.event.description %>
+    10:   </p>
+    11: 
+    12: </div>
+  
+app/views/users/_user.html.erb:9
+app/views/users/index.html.erb:7
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:05:43 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 4.7ms | Allocations: 3178)
+  Rendered users/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 3938)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4010)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms | Allocations: 4336)
+
+
+  
+ActionView::Template::Error (undefined method `event' for #<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">
+Did you mean?  events
+               events=):
+     6: 
+     7:   <p>
+     8:     <strong>Name:</strong>
+     9:     <%= user.event.description %>
+    10:   </p>
+    11: 
+    12: </div>
+  
+app/views/users/_user.html.erb:9
+app/views/users/index.html.erb:7
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:05:47 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 1.6ms | Allocations: 2800)
+  Rendered users/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 4065)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 4142)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms | Allocations: 5404)
+
+
+  
+ActionView::Template::Error (Rails couldn't find a valid model for Usereventaward association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+     6: 
+     7:   <p>
+     8:     <strong>Name:</strong>
+     9:     <%= user.events.description %>
+    10:   </p>
+    11: 
+    12: </div>
+  
+app/views/users/_user.html.erb:9
+app/views/users/index.html.erb:7
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:06:43 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered users/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 5117)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 5194)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms | Allocations: 6325)
+
+
+  
+ActionView::Template::Error (undefined method `events' for #<ActiveRecord::Relation [#<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">, #<User id: 2, name: "Geraldo", created_at: "2023-03-28 21:37:09.108876000 +0000", updated_at: "2023-03-28 21:37:09.108876000 +0000">, #<User id: 3, name: "iris", created_at: "2023-03-28 21:37:16.199320000 +0000", updated_at: "2023-03-28 21:37:16.199320000 +0000">]>):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.events.each do |user| %>
+    7:     <%= render user %>
+    8:     <p>
+    9:       <%= link_to "Show this user", user %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:06:48 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered users/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 4515)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4592)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 5722)
+
+
+  
+ActionView::Template::Error (undefined method `event' for #<ActiveRecord::Relation [#<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">, #<User id: 2, name: "Geraldo", created_at: "2023-03-28 21:37:09.108876000 +0000", updated_at: "2023-03-28 21:37:09.108876000 +0000">, #<User id: 3, name: "iris", created_at: "2023-03-28 21:37:16.199320000 +0000", updated_at: "2023-03-28 21:37:16.199320000 +0000">]>):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.event.each do |user| %>
+    7:     <%= render user %>
+    8:     <p>
+    9:       <%= link_to "Show this user", user %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:12:17 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 7.7ms | Allocations: 3413)
+  Rendered users/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 4859)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 4936)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.7ms | Allocations: 6064)
+
+
+  
+ActionView::Template::Error (undefined method `event' for #<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">
+Did you mean?  events
+               events=):
+     6: 
+     7:   <p>
+     8:     <strong>Name:</strong>
+     9:     <%= user.event.description %>
+    10:   </p>
+    11: 
+    12: </div>
+  
+app/views/users/_user.html.erb:9
+app/views/users/index.html.erb:7
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:12:37 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 6.1ms | Allocations: 4727)
+  Rendered users/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 5992)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 6069)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms | Allocations: 7200)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `event' for #<ActionView::Base:0x0000000000df98>
+Did you mean?  event_url):
+     6: 
+     7:   <p>
+     8:     <strong>Name:</strong>
+     9:     <%= event.description %>
+    10:   </p>
+    11: 
+    12: </div>
+  
+app/views/users/_user.html.erb:9
+app/views/users/index.html.erb:7
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:13:06 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 1.0ms | Allocations: 184)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 16)
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1824)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 4929)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.1ms | Allocations: 6111)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:13:17 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1328)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 4420)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 5594)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:13:18 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 848)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3506)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.2ms | Allocations: 3854)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:13:30 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1205)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4297)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 5451)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:14:10 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1242)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 4334)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.1ms | Allocations: 5508)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:14:49 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 4226)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 4303)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.1ms | Allocations: 5439)
+
+
+  
+ActionView::Template::Error (undefined method `event' for #<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">
+Did you mean?  events
+               events=):
+     6:   <% @users.each do |user| %>
+     7: 
+     8:     <%= user.name %>
+     9:     <%= user.event.description %>
+    10: 
+    11: 
+    12: 
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:14:56 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3444)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3521)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms | Allocations: 4785)
+
+
+  
+ActionView::Template::Error (Rails couldn't find a valid model for Usereventaward association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+     6:   <% @users.each do |user| %>
+     7: 
+     8:     <%= user.name %>
+     9:     <%= user.events.description %>
+    10: 
+    11: 
+    12: 
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:19:18 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 4224)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 4301)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 5432)
+
+
+  
+ActionView::Template::Error (undefined method `event' for #<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">
+Did you mean?  events
+               events=):
+     6:   <% @users.each do |user| %>
+     7: 
+     8:     <%= user.name %>
+     9:     <%= user.event.description %>
+    10: 
+    11: 
+    12: 
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:19:34 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered users/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 4595)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 4672)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.5ms | Allocations: 5803)
+
+
+  
+ActionView::Template::Error (undefined method `events' for #<ActiveRecord::Relation [#<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">, #<User id: 2, name: "Geraldo", created_at: "2023-03-28 21:37:09.108876000 +0000", updated_at: "2023-03-28 21:37:09.108876000 +0000">, #<User id: 3, name: "iris", created_at: "2023-03-28 21:37:16.199320000 +0000", updated_at: "2023-03-28 21:37:16.199320000 +0000">]>):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.events.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:19:35 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered users/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 4034)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 4105)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms | Allocations: 4419)
+
+
+  
+ActionView::Template::Error (undefined method `events' for #<ActiveRecord::Relation [#<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">, #<User id: 2, name: "Geraldo", created_at: "2023-03-28 21:37:09.108876000 +0000", updated_at: "2023-03-28 21:37:09.108876000 +0000">, #<User id: 3, name: "iris", created_at: "2023-03-28 21:37:16.199320000 +0000", updated_at: "2023-03-28 21:37:16.199320000 +0000">]>):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.events.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:19:51 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered users/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 4581)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4658)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.4ms | Allocations: 5768)
+
+
+  
+ActionView::Template::Error (undefined method `event' for #<ActiveRecord::Relation [#<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">, #<User id: 2, name: "Geraldo", created_at: "2023-03-28 21:37:09.108876000 +0000", updated_at: "2023-03-28 21:37:09.108876000 +0000">, #<User id: 3, name: "iris", created_at: "2023-03-28 21:37:16.199320000 +0000", updated_at: "2023-03-28 21:37:16.199320000 +0000">]>):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.event.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:20:04 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 4208)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 4285)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms | Allocations: 5415)
+
+
+  
+ActionView::Template::Error (undefined method `description' for #<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">
+Did you mean?  decrypt):
+     6:   <% @users.each do |user| %>
+     7: 
+     8:     <%= user.name %>
+     9:     <%= user.description %>
+    10: 
+    11: 
+    12: 
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:23:11 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 19.7ms | Allocations: 4241)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 4318)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.2ms | Allocations: 5449)
+
+
+  
+ActionView::Template::Error (undefined method `user_event_awards' for #<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">
+Did you mean?  usereventawards
+               usereventawards=
+               usereventaward_ids):
+     6:   <% @users.each do |user| %>
+     7: 
+     8:     <%= user.name %>
+     9:     <%= user.user_event_awards.event_id %>
+    10: 
+    11: 
+    12: 
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 11:23:30 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 14.2ms | Allocations: 4238)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 4315)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.1ms | Allocations: 5446)
+
+
+  
+ActionView::Template::Error (undefined method `user_event_award' for #<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">
+Did you mean?  usereventawards
+               usereventawards=):
+     6:   <% @users.each do |user| %>
+     7: 
+     8:     <%= user.name %>
+     9:     <%= user.user_event_award.event_id %>
+    10: 
+    11: 
+    12: 
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 12:17:06 -0300
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 13ms (Allocations: 7585)
+
+
+  
+NoMethodError (undefined method `user_event_awards' for User:Class):
+  
+app/controllers/users_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2023-03-29 12:17:19 -0300
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 18ms (Allocations: 3596)
+
+
+  
+NoMethodError (undefined method `user_event_awards' for User:Class):
+  
+app/controllers/users_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2023-03-29 12:17:20 -0300
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 11ms (Allocations: 7616)
+
+
+  
+NoMethodError (undefined method `user_event_award' for User:Class):
+  
+app/controllers/users_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2023-03-29 12:18:17 -0300
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 22ms (Allocations: 7562)
+
+
+  
+NoMethodError (undefined method `UserEventAward' for User:Class):
+  
+app/controllers/users_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2023-03-29 12:18:18 -0300
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 18ms (Allocations: 3592)
+
+
+  
+NoMethodError (undefined method `UserEventAward' for User:Class):
+  
+app/controllers/users_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2023-03-29 12:18:23 -0300
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 20ms (Allocations: 7633)
+
+
+  
+NoMethodError (undefined method `UserEventAwards' for User:Class):
+  
+app/controllers/users_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2023-03-29 12:18:30 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 5229)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 5306)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.3ms | Allocations: 10248)
+
+
+  
+ActionView::Template::Error (undefined method `user_event_award' for #<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">
+Did you mean?  usereventawards
+               usereventawards=):
+     6:   <% @users.each do |user| %>
+     7: 
+     8:     <%= user.name %>
+     9:     <%= user.user_event_award.event_id %>
+    10: 
+    11: 
+    12: 
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 12:18:47 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 4239)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 4316)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.1ms | Allocations: 5447)
+
+
+  
+ActionView::Template::Error (undefined method `UserEventAward' for #<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">
+Did you mean?  usereventawards
+               usereventawards=
+               usereventaward_ids):
+     6:   <% @users.each do |user| %>
+     7: 
+     8:     <%= user.name %>
+     9:     <%= user.UserEventAward.event_id %>
+    10: 
+    11: 
+    12: 
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 12:19:08 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 14.2ms | Allocations: 4226)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 4303)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.2ms | Allocations: 5434)
+
+
+  
+ActionView::Template::Error (undefined method `UserEventAwards' for #<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">
+Did you mean?  usereventawards=
+               usereventaward_ids
+               usereventaward_ids=):
+     6:   <% @users.each do |user| %>
+     7: 
+     8:     <%= user.name %>
+     9:     <%= user.UserEventAwards.event_id %>
+    10: 
+    11: 
+    12: 
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 12:19:18 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 19.3ms | Allocations: 4242)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 4319)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.3ms | Allocations: 5450)
+
+
+  
+ActionView::Template::Error (undefined method `userEventAward' for #<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">
+Did you mean?  usereventawards
+               usereventawards=
+               usereventaward_ids):
+     6:   <% @users.each do |user| %>
+     7: 
+     8:     <%= user.name %>
+     9:     <%= user.userEventAward.event_id %>
+    10: 
+    11: 
+    12: 
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 12:19:19 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3690)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3761)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms | Allocations: 4076)
+
+
+  
+ActionView::Template::Error (undefined method `userEventAward' for #<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">
+Did you mean?  usereventawards
+               usereventawards=
+               usereventaward_ids):
+     6:   <% @users.each do |user| %>
+     7: 
+     8:     <%= user.name %>
+     9:     <%= user.userEventAward.event_id %>
+    10: 
+    11: 
+    12: 
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 12:19:28 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 4245)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4322)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 5432)
+
+
+  
+ActionView::Template::Error (undefined method `event_id' for #<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">
+Did you mean?  event_ids
+               event_ids=):
+     6:   <% @users.each do |user| %>
+     7: 
+     8:     <%= user.name %>
+     9:     <%= user.event_id %>
+    10: 
+    11: 
+    12: 
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 12:19:33 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1264)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 18354)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.3ms | Allocations: 19524)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:35:25 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 4425)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4502)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms | Allocations: 5636)
+
+
+  
+ActionView::Template::Error (undefined method `event' for #<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">
+Did you mean?  events
+               events=):
+     6:   <% @users.each do |user| %>
+     7: 
+     8:     <%= user.name %>
+     9:     <%= user.event.description %>
+    10: 
+    11: 
+    12: 
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:35:38 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3472)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3549)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 4813)
+
+
+  
+ActionView::Template::Error (Rails couldn't find a valid model for Usereventaward association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+     6:   <% @users.each do |user| %>
+     7: 
+     8:     <%= user.name %>
+     9:     <%= user.events.description %>
+    10: 
+    11: 
+    12: 
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:44:04 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 5479)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 5568)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms | Allocations: 10938)
+
+
+  
+ActionView::Template::Error (Rails couldn't find a valid model for Usereventaward association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.events.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:44:25 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 5134)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 5214)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 6364)
+
+
+  
+ActionView::Template::Error (undefined method `events' for #<User::ActiveRecord_Relation:0x00007f0784c83808>):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.events.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.events.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:44:50 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 3585)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3662)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms | Allocations: 8870)
+
+
+  
+ActionView::Template::Error (undefined method `events' for #<User::ActiveRecord_Relation:0x00007f0788211970>):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.events.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.events.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:44:51 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 3288)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 3359)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 3685)
+
+
+  
+ActionView::Template::Error (undefined method `events' for #<User::ActiveRecord_Relation:0x00007f07983ef160>):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.events.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.events.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:45:03 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 5043)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 5120)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 10323)
+
+
+  
+ActionView::Template::Error (undefined method `events' for #<User::ActiveRecord_Relation:0x00007f075400db30>):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.events.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.events.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:45:14 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 5127)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 5207)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 6354)
+
+
+  
+ActionView::Template::Error (undefined method `event' for #<User::ActiveRecord_Relation:0x00007f0784cecd80>):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.event.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.events.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:45:20 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 3050)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 3130)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 4418)
+
+
+  
+ActionView::Template::Error (Rails couldn't find a valid model for Usereventaward association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.events.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:45:21 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2611)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2682)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3152)
+
+
+  
+ActionView::Template::Error (Rails couldn't find a valid model for Usereventaward association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.events.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:47:48 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3049)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3129)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 4397)
+
+
+  
+ActionView::Template::Error (Rails couldn't find a valid model for Usereventaward association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.event.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:47:49 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2611)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2682)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 3152)
+
+
+  
+ActionView::Template::Error (Rails couldn't find a valid model for Usereventaward association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.event.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:48:13 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2611)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 2682)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3130)
+
+
+  
+ActionView::Template::Error (Rails couldn't find a valid model for Usereventaward association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.event.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:49:29 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2611)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 2682)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 3130)
+
+
+  
+ActionView::Template::Error (Rails couldn't find a valid model for Usereventaward association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.event.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:49:30 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 5202)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 5291)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms | Allocations: 10645)
+
+
+  
+ActionView::Template::Error (Rails couldn't find a valid model for Usereventaward association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.event.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:49:30 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2654)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2725)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3199)
+
+
+  
+ActionView::Template::Error (Rails couldn't find a valid model for Usereventaward association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.event.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:49:31 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2574)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2645)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3091)
+
+
+  
+ActionView::Template::Error (Rails couldn't find a valid model for Usereventaward association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.event.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:49:35 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1576)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1653)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms | Allocations: 6858)
+
+
+  
+ActionView::Template::Error (Can't join 'User' to association named 'usereventaward'; perhaps you misspelled it?):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.event.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:49:36 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1254)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 1325)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 1653)
+
+
+  
+ActionView::Template::Error (Can't join 'User' to association named 'usereventaward'; perhaps you misspelled it?):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.event.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:49:37 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1254)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 1325)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 1629)
+
+
+  
+ActionView::Template::Error (Can't join 'User' to association named 'usereventaward'; perhaps you misspelled it?):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.event.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:49:38 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1254)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 1325)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1629)
+
+
+  
+ActionView::Template::Error (Can't join 'User' to association named 'usereventaward'; perhaps you misspelled it?):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.event.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:49:46 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 4732)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 4809)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms | Allocations: 10159)
+
+
+  
+ActionView::Template::Error (Rails couldn't find a valid model for Usereventaward association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.event.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:49:47 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 14.2ms | Allocations: 2574)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 2645)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 3115)
+
+
+  
+ActionView::Template::Error (Rails couldn't find a valid model for Usereventaward association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.event.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:49:48 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2574)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2645)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 3091)
+
+
+  
+ActionView::Template::Error (Rails couldn't find a valid model for Usereventaward association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.event.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:49:49 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2574)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2645)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 3091)
+
+
+  
+ActionView::Template::Error (Rails couldn't find a valid model for Usereventaward association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.event.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:50:08 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 5553)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 5630)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.9ms | Allocations: 10604)
+
+
+  
+ActionView::Template::Error (undefined method `event' for #<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">
+Did you mean?  events
+               events=):
+     6:   <% @users.each do |user| %>
+     7: 
+     8:     <%= user.name %>
+     9:     <%= user.event.description %>
+    10: 
+    11: 
+    12: 
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:50:09 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 3701)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 3772)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms | Allocations: 4086)
+
+
+  
+ActionView::Template::Error (undefined method `event' for #<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">
+Did you mean?  events
+               events=):
+     6:   <% @users.each do |user| %>
+     7: 
+     8:     <%= user.name %>
+     9:     <%= user.event.description %>
+    10: 
+    11: 
+    12: 
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 13:50:10 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 3701)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3772)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms | Allocations: 4066)
+
+
+  
+ActionView::Template::Error (undefined method `event' for #<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">
+Did you mean?  events
+               events=):
+     6:   <% @users.each do |user| %>
+     7: 
+     8:     <%= user.name %>
+     9:     <%= user.event.description %>
+    10: 
+    11: 
+    12: 
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 14:21:32 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered users/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 4778)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 4855)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.5ms | Allocations: 5965)
+
+
+  
+ActionView::Template::Error (undefined method `events' for #<ActiveRecord::Relation [#<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">, #<User id: 2, name: "Geraldo", created_at: "2023-03-28 21:37:09.108876000 +0000", updated_at: "2023-03-28 21:37:09.108876000 +0000">, #<User id: 3, name: "iris", created_at: "2023-03-28 21:37:16.199320000 +0000", updated_at: "2023-03-28 21:37:16.199320000 +0000">]>):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.events.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 14:22:57 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered users/index.html.erb within layouts/application (Duration: 15.3ms | Allocations: 4031)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 4102)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.3ms | Allocations: 4416)
+
+
+  
+ActionView::Template::Error (undefined method `events' for #<ActiveRecord::Relation [#<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">, #<User id: 2, name: "Geraldo", created_at: "2023-03-28 21:37:09.108876000 +0000", updated_at: "2023-03-28 21:37:09.108876000 +0000">, #<User id: 3, name: "iris", created_at: "2023-03-28 21:37:16.199320000 +0000", updated_at: "2023-03-28 21:37:16.199320000 +0000">]>):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.events.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.description %>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2023-03-29 14:22:58 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered users/index.html.erb within layouts/application (Duration: 13.5ms | Allocations: 4031)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 4102)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.3ms | Allocations: 4396)
+
+
+  
+ActionView::Template::Error (undefined method `events' for #<ActiveRecord::Relation [#<User id: 1, name: "Mauro Biazutti", created_at: "2023-03-28 21:37:02.835802000 +0000", updated_at: "2023-03-28 21:37:02.835802000 +0000">, #<User id: 2, name: "Geraldo", created_at: "2023-03-28 21:37:09.108876000 +0000", updated_at: "2023-03-28 21:37:09.108876000 +0000">, #<User id: 3, name: "iris", created_at: "2023-03-28 21:37:16.199320000 +0000", updated_at: "2023-03-28 21:37:16.199320000 +0000">]>):
+    3: <h1>Users</h1>
+    4: 
+    5: <div id="users">
+    6:   <% @users.events.each do |user| %>
+    7: 
+    8:     <%= user.name %>
+    9:     <%= user.description %>
+  
+app/views/users/index.html.erb:6

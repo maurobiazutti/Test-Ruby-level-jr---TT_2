@@ -4,10 +4,8 @@ one:
   description: MyString
   user: one
   event: one
-  award: one
 
 two:
   description: MyString
   user: two
   event: two
-  award: two

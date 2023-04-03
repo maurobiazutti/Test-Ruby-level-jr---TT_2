@@ -7,4 +7,9 @@ class UsersController < ApplicationController
 end
 
 
-
+#Rota
+Rails.application.routes.draw do
+  resources :users do
+    get 'find_user', on: :collection
+  end
+end

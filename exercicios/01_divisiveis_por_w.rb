@@ -1,4 +1,9 @@
-def div_w(x, y, w)
+=begin
+1 - Escreva um método que dado um inteiro x, um inteiro y e um inteiro w retorne todos os
+números divisíveis por w entre x e y.
+=end
+
+def divisiveis_w(x, y, w)
   intervalo = if x <= y
                 x..y
               else
@@ -13,4 +18,4 @@ def div_w(x, y, w)
   puts array_intervalo
 end
 
-div_w(12, 1, 2)
+divisiveis_w(20, 4, 5)

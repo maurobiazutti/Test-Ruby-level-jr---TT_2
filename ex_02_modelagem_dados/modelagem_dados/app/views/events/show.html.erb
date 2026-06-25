@@ -1,0 +1,49 @@
+<h1><%= @event.title %></h1>
+<p><strong>Data:</strong> <%= @event.date.strftime("%d/%m/%Y") if @event.date %></p>
+
+<hr>
+
+<h2>🏆 Prêmios do Evento (Até 3)</h2>
+<ul>
+  <% if @prizes.any? %>
+    <% @prizes.each do |prize| %>
+      <li>
+        <strong><%= prize.title %></strong> - 
+        Ganhador: 
+        <% if prize.winner %>
+          <span style="color: green; font-weight: bold;"><%= prize.winner.name %></span>
+        <% else %>
+          <span style="color: gray; font-style: italic;">Sorteio pendente</span>
+        <% end %>
+      </li>
+    <% end %>
+  <% else %>
+    <li>Nenhum prêmio cadastrado para este evento.</li>
+  <% end %>
+</ul>
+
+<hr>
+
+<h2>👥 Lista de Participantes</h2>
+
+<h3>🟢 Presentes (<%= @present_users.count %>)</h3>
+<ul>
+  <% if @present_users.any? %>
+    <% @present_users.each do |user| %>
+      <li><%= user.name %> (<%= user.email %>)</li>
+    <% end %>
+  <% else %>
+    <li>Nenhum participante presente ainda.</li>
+  <% end %>
+</ul>
+
+<h3>🔴 Ausentes / Apenas Inscritos (<%= @absent_users.count %>)</h3>
+<ul>
+  <% if @absent_users.any? %>
+    <% @absent_users.each do |user| %>
+      <li><%= user.name %> (<%= user.email %>)</li>
+    <% end %>
+  <% else %>
+    <li>Nenhum participante ausente.</li>
+  <% end %>
+</ul>

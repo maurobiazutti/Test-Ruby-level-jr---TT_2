@@ -4,5 +4,7 @@ class User < ApplicationRecord
 
   has_many :won_prizes, class_name: 'Prize', foreign_key: 'winner_id'
 
+  # Validações básicas
   validates :name, :email, presence: true
+  validates :email, uniqueness: true
 end
